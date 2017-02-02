@@ -364,7 +364,7 @@ public class Main {
         numeroLineas = new int[numCarton];
         //Rellena la 2ª dimension del array cartones con numeros aleatorios.
         fillArray(cartones);
-        //Copiamos el array, cartones en el array de copiaCartones, para guardar los datos.
+        //Copiamos el array cartones en el array de copiaCartones, para poder mostrar los datos posteriormente.
         copyArray(cartones, copiaCartones);
 
         for (int i = 0; i < cartones.length; i++) {
@@ -394,7 +394,7 @@ public class Main {
     static void fillArray(int cartones[][]) {
         int num = 0;
 
-        //Tenemos un booleano que nos marcará, a través de la funcion checkNumber, si está o no repetido, el numero.
+        //Tenemos un booleano que nos marcará, a través de la funcion checkNumber, si está o no repetido el numero.
         boolean check = false;
 
         /**
@@ -419,7 +419,7 @@ public class Main {
      * posteriormente, cada bola que salga, si esta en el carton, se reste y se ponga a 0.
      *
      * @param cartones el array original de los cartones y sus numeros
-     * @param copiaCartones , la copia del array original para la comprobacion de los numeros
+     * @param copiaCartones es la copia del array original para la comprobacion de los numeros
      */
     static void copyArray (int cartones[][], int copiaCartones[][]){
         for (int i = 0; i < cartones.length ; i++) {
